@@ -1,50 +1,173 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>DOTA 2 Match</title>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Dota 2 Match </title>
+    <style>
+        *{
+            margin: 0 ;
+            padding: 0;   
+        }
+        .judul{
+            background-color:darkviolet;
+            background-size: cover;
+        }
+        table{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            font-family: Segoe UI;
+        }
+        td{
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
-    <table border="1">
+    <table border="1" cellspacing="0" cellpadding="10" width="800" height="600">  
         <tr>
-            <th rowspan="2" bgcolor="fuchsia">Hero</th>
-            <th colspan="3" bgcolor="#00ff80">Stats</th>
+            <td colspan="8" class="judul">
+                   <h2>DOTA 2 Match Statistics</h2>                 
+            </td>
         </tr>
         <tr>
-            <th>Kill</th>
-            <th>Death</th>
-            <th>Assist</th>
+            <td>
+                <h3>Icon</h3>
+            </td>
+            <td>
+                <h3>Hero</h3>
+            </td>
+            <td>
+                <h3>Kill</h3>
+            </td>
+            <td>
+                <h3>Death</h3>
+            </td>
+            <td>
+                <h3>Assist</h3>
+            </td>
+            <td>
+                <h3>LH</h3>
+            </td>
+            <td>
+                <h3>DN</h3>
+            </td>
+            <td>
+                <h3>Gold</h3>
+            </td>
         </tr>
         <tr>
+            <td colspan="8" bgcolor="lightgreen">
+                <h3>The Radiant</h3>
+            </td>
+        </tr>
+        <tr>
+            <td><img src="images/Puck.png"></td>
             <td>Puck</td>
-            <td>8</td>
-            <td>1</td>
-            <td>25</td>
+            <td>10</td>
+            <td>4</td>
+            <td>24</td>
+            <td>400</td>
+            <td>20</td>
+            <td>25857</td>
         </tr>
         <tr>
-            <td>Warlock</td>
+            <td><img src="images/Oracle.png"></td>
+            <td>Oracle</td>
             <td>5</td>
-            <td>3</td>
+            <td>5</td>
             <td>30</td>
+            <td>185</td>
+            <td>15</td>
+            <td>15400</td>
         </tr>
         <tr>
-            <td>Mirana</td>
+            <td><img src="images/Sven.png"></td>
+            <td>Sven</td>
+            <td>8</td>
+            <td>6</td>
+            <td>28</td>
+            <td>395</td>
+            <td>5</td>
+            <td>24363</td>
+        </tr>
+        <tr>
+            <td><img src="images/Slardar.png"></td>
+            <td>Slardar</td>
+            <td>4</td>
+            <td>4</td>
+            <td>20</td>
+            <td>274</td>
+            <td>0</td>
+            <td>18888</td>
+        </tr>
+        <tr>
+            <td><img src="images/Io.png"></td>
+            <td>Io</td>
+            <td>3</td>
+            <td>6</td>
+            <td>25</td>
+            <td>120</td>
+            <td>2</td>
+            <td>14538</td>
+        </tr>
+        <tr>
+            <td colspan="8" bgcolor="tomato">
+                <h3>The Dire</h3>
+            </td>
+        </tr>
+        <tr>
+            <td><img src="images/Invoker.png"></td>
+            <td>Invoker</td>
+            <td>13</td>
+            <td>12</td>
+            <td>18</td>
+            <td>325</td>
+            <td>10</td>
+            <td>22400</td>
+        </tr>
+        <tr>
+            <td><img src="images/Doom.png"></td>
+            <td>Doom</td>
             <td>6</td>
             <td>2</td>
-            <td>22</td>
-        </tr>
-        <tr>
-            <td>Medusa</td>
-            <td>10</td>
+            <td>15</td>
+            <td>300</td>
             <td>5</td>
-            <td>20</td>
+            <td>29369</td>
         </tr>
         <tr>
-            <td>Axe</td>
-            <td>4</td>
-            <td>4</td>
-            <td>18</td>
+            <td><img src="images/Rubick.png"></td>
+            <td>Rubick</td>
+            <td>1</td>
+            <td>7</td>
+            <td>20</td>
+            <td>200</td>
+            <td>0</td>
+            <td>16678</td>
+        </tr>
+        <tr>
+            <td><img src="images/Lich.png"></td>
+            <td>Lich</td>
+            <td>2</td>
+            <td>5</td>
+            <td>30</td>
+            <td>200</td>
+            <td>0</td>
+            <td>14650</td>
+        </tr>
+        <tr>
+            <td><img src="images/Warlock.png"></td>
+            <td>Warlock</td>
+            <td>3</td>
+            <td>1</td>
+            <td>25</td>
+            <td>300</td>
+            <td>8</td>
+            <td>21900</td>
         </tr>
     </table>
-
 </body>
 </html>
