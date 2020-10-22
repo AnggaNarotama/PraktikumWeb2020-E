@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Registration Form</title>
+        <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+        <style>
+            *{
+                margin: 0px;
+                padding: 0px;
+                box-sizing: border-box;
+            }
+
+            html{
+                height: 100%;
+            }
+
+            body{
+                width: auto;
+                height: 100%;
+                font-family: 'Inter', sans-serif;
+                color:white;
+                background : url("image.jpg") no-repeat center;
+                background-size: cover;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            h1{
+                padding: 10px;
+                font-size: 32px;
+                font-weight: 300;
+                text-align: center;
+            }
+
+            hr{
+                color: white;
+                opacity: 1;
+            }
+
+            .main{
+                width: 500px;
+                min-height: 460px;
+                padding: 10px;
+                margin: auto;
+                border-radius: 15px;
+                box-shadow: 1px 2px 5px rgba(0,0,0,.31);
+                background-color: purple;
+            }
+
+            .labelmargin{
+                margin-left: 60px;
+            }
+
+            .inputnama{
+                margin-left: 75px;
+            }
+
+            .inputuser{
+                margin-left: 42px;
+            }
+
+            .inputpass{
+                margin-left: 46px;
+            }
+
+            .inputpria{
+                margin-left: 16px;
+            }
+
+            .inputwanita{
+                margin-left: 10px;
+            }
+            
+            .inputcoding{
+                margin-left: 68px;
+            }
+            .inputother{
+                margin-left: 10px;
+            }
+
+            .inputnegara{
+                margin-left: 63px;
+            }
+
+            .inputkomentar{
+                margin-left: 45px;
+            }
+
+            input[type=text], input[type=password], select, textarea{
+                width: 50%;
+                padding: 5px;
+                resize: vertical;
+            }
+            
+            button{
+                width: 30%;
+                height: 35px;
+                color: white;
+                background-color:slateblue;
+                border-radius: 5px;
+                border-color: indigo;
+                margin-top: 15px;
+                margin-left: 158px;
+                margin-bottom: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="main">
+            <h1 align="center">REGISTRATION</h1>
+            <hr><br>
+            <form action="registration.php" method="POST"> 
+            <label class="labelmargin" for="nama">Nama</label>
+                <input class="inputnama" type="text" id="nama" name="Nama" placeholder="Nama Lengkap" required>
+            <br><br>
+            <label class="labelmargin" for="username">Username</label>
+                <input class="inputuser" type="text" id="username" name="Username" placeholder="Username" required>
+            <br><br>
+            <label class="labelmargin" for="password">Password</label>
+                <input class="inputpass" type="password" id="password" name="Password" placeholder="Password" required>
+            <br><br>
+            <label class="labelmargin" for="jeniskelamin">Jenis Kelamin</label>
+                <input class="inputpria" type="radio" id="pria" name="gender" value="Pria">
+            <label for="Pria">Pria</label>
+                <input class="inputwanita" type="radio" id="wanita" name="gender" value="Wanita">
+            <label for="Wanita">Wanita</label>
+            <br><br>
+            <label class="labelmargin" for="hobby">Hobby</label>
+                <input class="inputcoding" type="checkbox" id="coding" name="Coding">
+            <label for="Coding">Coding</label>
+                <input class="inputother" type="checkbox" id="design" name="Design">
+            <label for="Design">Design</label>
+                <input class="inputother" type="checkbox" id="reading" name="Reading">
+            <label for="Reading">Reading</label>
+            <br><br>
+            <label class="labelmargin" for="Negara">Negara</label>
+            <select class="inputnegara" id="Negara" name="Negara">
+                <option value="Indonesia">Indonesia</option>
+                <option value="Malaysia">Malaysia</option>
+                <option value="Singapura">Singapura</option>
+                <option value="Thailand">Thailand</option>
+                <option value="Korea">Korea</option>
+            </select>
+            <br><br>
+            <label class="labelmargin" for="Komentar">Komentar</label>
+            <textarea class="inputkomentar" name="message" rows="10" cols="20"></textarea>
+            <br><br>
+            <button type="button">Submit</button>
+            </form>
+        </div>
+    </body>
+</html>
