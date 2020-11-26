@@ -68,15 +68,15 @@ if(isset($_POST['s']))
     $avg=$sum/3;
     if($avg>=0&&$avg<60)
         $gradestat="Tidak Lulus";
-    if($avg>60)
+    if($avg>=60)
         $gradestat="Lulus";
-    if($avg>0&&$avg<60)
+    if($avg>=0&&$avg<60)
         $grade="-";
-    if($avg>60&&$avg<=70)
+    if($avg>=60&&$avg<70)
         $grade="C";
-    if($avg>70&&$avg<=80)
+    if($avg>=70&&$avg<80)
         $grade="B";
-    if($avg>80)
+    if($avg>=80)
         $grade="A";
     echo "<br><br>";
     echo "<font size=4><center>Nilai Akhir Anda: ".$avg."</center><br>"; 
