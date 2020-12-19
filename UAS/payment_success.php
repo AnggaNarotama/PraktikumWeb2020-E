@@ -25,7 +25,7 @@
 								<h1>Thankyou</h1>
 								<hr/>
 									<p>Hello, your item will be delivered soon, thanks for your money.</p>
-									<img src="http://www.simpleimageresizer.com/_uploads/photos/845bdc04/Pngtreelucky_fortune_more_than_a_3954008_20.png" alt="Thanks">
+									<img src="http://www.simpleimageresizer.com/_uploads/photos/7c551472/Pngtreelucky_fortune_more_than_a_3954008_20.png" alt="Thanks">
 								<br>
 								<br>
 								<a href="index.php" class="btn btn-success btn-lg">Continue Shopping</a>
